@@ -19,5 +19,33 @@
       src="https://i.ytimg.com/vi/qss8hWACpy4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAEoXcpMOSjWca86Ir5eECiePfSfg"
       alt=""
     />
+
+    <blockquote>
+      "Had I been present at the Creation, I would have given some useful hints
+      for the better ordering of the universe."
+    </blockquote>
+
+    <button onclick="changeQuote()">Change quote</button>
+
+    <script>
+      var index = 0;
+
+      function changeQuote() {
+        var quote = [
+          `"I really like web development!" - Badee Khalbouss`,
+          `"I am enjoying my time in hammer hacks!" - Badee Khalbouss`,
+          `"Monster Truck" - Best men (Me)`,
+        ];
+
+        var blockquote = document.querySelector("blockquote");
+        blockquote.innerHTML = quote[index];
+
+        index++;
+
+        if (index >= 3) {
+          index = 0 
+        }
+      }
+    </script>
   </body>
 </html>
